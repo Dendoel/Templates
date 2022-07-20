@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  overflow-x: hidden;
+  max-width: 1400px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #202020;
+}
+.main header {
+  margin: 50px 80px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.site_name {
+  font-family: medium;
+  font-size: 40px;
+  background: linear-gradient(#5DA7F4, #4A46F7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.login_button {
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: linear-gradient(#3AA7C4, #0A06F7);
+}
+.login_icon {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/login.svg");
+  background-size: contain;
+}
+.main nav {
+  margin: 30px 80px 0px;
+}
+.nav_text {
+  display: flex;
+}
+.nav_chapter {
+  font-family: regular;
+  font-size: 20px;
+  margin-right: 40px;
+}
+.nav_chapter a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+#chapter_active {
+  box-sizing: content-box;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.separator {
+  background-color: #f2f2f2;
+  opacity: 0.5;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  bottom: 1px;
+}
+.counter {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.count {
+  font-family: medium;
+  font-size: 40px;
+  color: #F3D645;
+}
+.counter_text {
+  margin-top: 10px;
+  font-family: light;
+  font-size: 34px;
+  color: #f2f2f2;
+}
+.offers {
+  margin: 50px 80px 0px;
+}
+.offers_text {
+  font-family: regular;
+  font-size: 20px;
+  color: #f2f2f2;
+}
+.products {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.products a {
+  text-decoration: none;
+}
+.product_wrap {
+  margin-top: 20px;
+}
+.product {
+  background-color: rgba(242, 242, 242, 0.25);
+  border-radius: 10px;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: regular;
+  font-size: 16px;
+  color: #f2f2f2;
+}
+.product_no_price {
+  display: flex;
+}
+.product_price {
+  font-family: medium;
+  font-size: 20px;
+  color: #5B73FF;
+}
+.more_wrap {
+  display: flex;
+  justify-content: center;
+}
+.more {
+  display: block;
+  text-decoration: none;
+  font-family: regular;
+  font-size: 20px;
+  color: #5B73FF;
+  margin-top: 30px;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px; /* end of page */
+}
+.social_text {
+  font-family: regular;
+  font-size: 28px;
+  color: #f2f2f2;
+}
+.social_icons {
+  margin-top: 20px;
+  display: flex;
+}
+.social_icon_wrap {
+  margin: 0px 10px;
+}
+.social_icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-bottom: 7px;
+  background-color: rgba(242, 242, 242, 0.75);
+}
+#vk_logo, #telegram_logo, #discord_logo {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#vk_logo {
+  background-image: url("images/vk.svg");
+}
+#telegram_logo {
+  background-image: url("images/telegram.svg");
+}
+#discord_logo {
+  background-image: url("images/discord.svg");
+}
+@font-face {
+  font-family: light;
+  src: url("fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: regular;
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: medium;
+  src: url("fonts/Montserrat-Medium.ttf");
+}
