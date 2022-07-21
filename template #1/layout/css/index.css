@@ -1,8 +1,56 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* media */
+@media screen and (max-width: 449.99px) {
+  /* header */
+  .main header {
+    margin: 30px 30px 0px;
+  }
+  .site_name {
+    font-size: 26px;
+  }
+  .login_button {
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 33px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  /* header */
+  .main header {
+    margin: 30px 50px 0px;
+  }
+  .site_name {
+    font-size: 32px;
+  }
+  .login_button {
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* header */
+  .main header {
+    margin: 50px 80px 0px;
+  }
+  .site_name {
+    font-size: 40px;
+  }
+  .login_button {
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+  }
+}
+/* main */
 body {
   display: flex;
   flex-direction: column;
@@ -16,24 +64,19 @@ body {
   background-color: #202020;
 }
 .main header {
-  margin: 50px 80px 0px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .site_name {
   font-family: medium;
-  font-size: 40px;
   background: linear-gradient(#5DA7F4, #4A46F7);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 .login_button {
-  padding: 5px;
-  width: 45px;
-  height: 45px;
-  border-radius: 45px;
-  background: linear-gradient(#3AA7C4, #0A06F7);
+  background: linear-gradient(#5394d9, #0A06F7);
 }
 .login_icon {
   width: 100%;
@@ -41,16 +84,19 @@ body {
   background-image: url("images/login.svg");
   background-size: contain;
 }
+/* nav */
 .main nav {
   margin: 30px 80px 0px;
+}
+.nav_chapter {
+  font-size: 20px;
+  margin-right: 40px;
 }
 .nav_text {
   display: flex;
 }
 .nav_chapter {
   font-family: regular;
-  font-size: 20px;
-  margin-right: 40px;
 }
 .nav_chapter a {
   text-decoration: none;
