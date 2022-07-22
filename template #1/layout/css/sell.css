@@ -115,51 +115,60 @@ body {
   position: relative;
   bottom: 1px;
 }
-/* games */
-.games_wrap {
+/* sell */
+.sell_wrap {
   margin: 30px 80px 0px;
 }
-.games_text {
+.sell_text {
   font-family: regular;
   font-size: 20px;
   color: #f2f2f2;
 }
-.games {
+.sell_text a {
+  text-decoration: none;
+  color: #5B73FF;
+}
+#st2 {
+  opacity: 0.75;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.form_text {
+  margin-top: 25px;
+  font-family: regular;
+  font-size: 18px;
+  color: #f2f2f2;
+  opacity: 0.75;
+}
+form {
+  margin: 0px 80px;
   display: flex;
   flex-direction: column;
 }
-.games a {
-  text-decoration: none;
+input {
+  height: 45px;
+  margin-top: 15px;
 }
-.game_wrap {
-  margin-top: 20px;
-}
-.game {
+.field {
   background-color: rgba(242, 242, 242, 0.25);
+  border: none;
   border-radius: 10px;
-  padding: 12px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 12px 24px;
   font-family: regular;
-  font-size: 16px;
   color: #f2f2f2;
+  font-size: 20px;
 }
-.game_name {
-  font-family: medium;
-  font-size: 18px;
-  color: #F3D645;
-}
-.game_no_name {
-  display: flex;
-  align-items: center;
-}
-.accounts_count {
-  width: 120px;
-  text-align: right;
+.button {
+  cursor: pointer;
+  background-color: #F3D645;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 30px;
+  margin-top: 30px;
+  align-self: center;
   font-family: medium;
   font-size: 20px;
-  color: #5B73FF;
+  color: #101010;
 }
 .end_text_wrap {
   display: flex;
@@ -172,8 +181,12 @@ body {
   width: 500px;
   text-align: center;
   font-family: regular;
-  font-size: 24px;
+  font-size: 22px;
   color: #f2f2f2;
+}
+.end_text a {
+  text-decoration: none;
+  color: #5B73FF;
 }
 @font-face {
   font-family: light;
@@ -187,11 +200,11 @@ body {
   font-family: medium;
   src: url("fonts/Montserrat-Medium.ttf");
 }
-.login_button:hover, #chapter_passive:hover, .game_wrap:hover {
+.login_button:hover, #chapter_passive:hover, .button:hover {
   transform: translateY(-4px);
   transition-duration: 200ms;
 }
-.login_button:active, #chapter_passive:active, .game_wrap:active {
+.login_button:active, #chapter_passive:active, .button:active {
   transform: translateY(-2px);
   transition-duration: 250ms;
 }

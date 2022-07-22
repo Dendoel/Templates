@@ -115,64 +115,41 @@ body {
   position: relative;
   bottom: 1px;
 }
-/* games */
-.games_wrap {
-  margin: 30px 80px 0px;
+/* guide */
+.guide_wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 80px;
+  margin-bottom: 50px; /* end of page */
 }
-.games_text {
+.base_text, .questions_text {
+  margin-top: 30px;
   font-family: regular;
   font-size: 20px;
   color: #f2f2f2;
+  opacity: 0.75;
 }
-.games {
+.bases, .questions {
   display: flex;
   flex-direction: column;
 }
-.games a {
+.bases a, .questions a {
   text-decoration: none;
 }
-.game_wrap {
+.base_wrap, .question_wrap {
   margin-top: 20px;
 }
-.game {
+.base, .question {
   background-color: rgba(242, 242, 242, 0.25);
   border-radius: 10px;
   padding: 12px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.base_name, .question_name {
   font-family: regular;
   font-size: 16px;
-  color: #f2f2f2;
-}
-.game_name {
-  font-family: medium;
-  font-size: 18px;
-  color: #F3D645;
-}
-.game_no_name {
-  display: flex;
-  align-items: center;
-}
-.accounts_count {
-  width: 120px;
-  text-align: right;
-  font-family: medium;
-  font-size: 20px;
-  color: #5B73FF;
-}
-.end_text_wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 50px; /* end of page */
-}
-.end_text {
-  width: 500px;
-  text-align: center;
-  font-family: regular;
-  font-size: 24px;
   color: #f2f2f2;
 }
 @font-face {
@@ -187,11 +164,11 @@ body {
   font-family: medium;
   src: url("fonts/Montserrat-Medium.ttf");
 }
-.login_button:hover, #chapter_passive:hover, .game_wrap:hover {
+.login_button:hover, #chapter_passive:hover, .base_wrap:hover, .question_wrap:hover {
   transform: translateY(-4px);
   transition-duration: 200ms;
 }
-.login_button:active, #chapter_passive:active, .game_wrap:active {
+.login_button:active, #chapter_passive:active, .base_wrap:active, .question_wrap:active {
   transform: translateY(-2px);
   transition-duration: 250ms;
 }
